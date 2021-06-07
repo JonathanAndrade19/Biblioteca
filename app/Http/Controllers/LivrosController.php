@@ -25,4 +25,8 @@ class LivrosController extends Controller
         return view('livros.index', compact('livros'));
     }
 
+    public function create()
+    {
+        return view('livros.create');
+    }
 }

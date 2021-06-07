@@ -12,16 +12,21 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Lista de livros</h1>
-        </div>
-        <a href="/livros/criar" class="btn btn-dark mb-3">Adicionar livro</a>
-        <ul class="list-group">
-            <?php foreach ($livros as $livro):?>
-                <li class="list-group-item"><?= $livro; ?></li>
-            <?php endforeach;?>
-        </ul>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Adicionar livros</h1>
     </div>
+    <a href="/livros" class="btn btn-dark mb-3">Voltar</a>
+
+    <form action="post">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" name="nome" id="nome">
+        </div>
+
+        <button class="btn btn-primary">Adicionar</button>
+    </form>
+
+</div>
 </body>
 </html>

@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/livros', 'App\Http\Controllers\LivrosController@index');
+
+Route::get('/livros/criar', 'App\Http\Controllers\LivrosController@create');

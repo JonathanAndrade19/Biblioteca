@@ -12,16 +12,11 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Lista de livros</h1>
-        </div>
-        <a href="/livros/criar" class="btn btn-dark mb-3">Adicionar livro</a>
-        <ul class="list-group">
-            <?php foreach ($livros as $livro):?>
-                <li class="list-group-item"><?= $livro; ?></li>
-            <?php endforeach;?>
-        </ul>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">@yield('cabecalho')</h1>
     </div>
+    @yield('conteudo')
+</div>
 </body>
 </html>
